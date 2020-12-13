@@ -36,7 +36,7 @@ test("renders a <h3> with the title of the post", () => {
       preview={posts[0].preview}
     />
   );
-  const h3 = screen.queryByAltText(posts[0].title);
+  const h3 = screen.queryByText(posts[0].title);
   expect(h3).toBeInTheDocument();
   expect(h3.tagName).toBe("H3");
 });
@@ -49,14 +49,14 @@ test("renders a <small> with the date of the post", () => {
       preview={posts[0].preview}
     />
   );
-  const small = screen.queryByAltText(posts[0].date);
+  const small = screen.queryByText(posts[0].date);
   expect(small).toBeInTheDocument();
   expect(small.tagName).toBe("SMALL");
 });
 
 test("uses a default value for the date if no date is passed as a prop", () => {
   render(<Article title={posts[0].title} preview={posts[0].preview} />);
-  const small = screen.queryByAltText("January 1, 1970");
+  const small = screen.queryByText("January 1, 1970");
   expect(small).toBeInTheDocument();
 });
 
