@@ -1,4 +1,4 @@
-# Components, Props and JSX Assessment
+# Components, Props and JSX Review
 
 ## Overview
 
