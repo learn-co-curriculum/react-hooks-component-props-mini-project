@@ -1,4 +1,4 @@
-# Components, Props and JSX Review
+# Components, Props and JSX Mini Project
 
 ## Overview
 
