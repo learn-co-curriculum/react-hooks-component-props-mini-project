@@ -10,7 +10,7 @@ down data as props.
 We'll be creating a personal blog site, similar to
 [Dan Abramov's Overreacted](overreacted.io):
 
-![demo](images/demo.png)
+![demo](https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-component-props-mini-project/master/images/demo.png)
 
 There is some starter code available in `src/components/App.js`. You have data
 available for the blog being imported, so you can pass it down from `App` to the
@@ -70,7 +70,7 @@ If the article takes less than 30 minutes to read:
   min read". If the article takes 7 minute, you should display "☕️☕️ 7 min
   read".
 
-If the article takes more than 30 minutes to read:
+If the article takes 30 minutes or longer to read:
 
 - For every 10 minutes (rounded up to the nearest 10), display a bento box
   emoji. For example, if the article takes 35 minutes to read, you should
