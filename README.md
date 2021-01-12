@@ -1,5 +1,10 @@
 # Components, Props and JSX Mini Project
 
+## Walkthrough Videos
+
+- [Core Deliverables](https://youtu.be/BiSol_PLdoI)
+- [Bonus Deliverables](https://youtu.be/QrDSZALcWnQ)
+
 ## Overview
 
 Now that you've learned about how to work with components in React, it's time to
