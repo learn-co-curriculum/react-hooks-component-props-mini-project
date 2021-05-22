@@ -1,4 +1,10 @@
-# Components, Props and JSX Mini Project
+# Putting it All Together: Components and Props
+
+## Learning Goals
+
+- Create components that return JSX
+- Use props to make components dynamic
+- Transform lists of data into lists of components
 
 ## Overview
 
@@ -10,7 +16,7 @@ down data as props.
 We'll be creating a personal blog site, similar to
 [Dan Abramov's Overreacted](overreacted.io):
 
-![demo](https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-component-props-mini-project/master/images/demo.png)
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-component-props-mini-project/demo.png)
 
 There is some starter code available in `src/components/App.js`. You have data
 available for the blog being imported, so you can pass it down from `App` to the
