@@ -12,8 +12,6 @@ function Article({ title, date, preview, time }) {
         timeElement = String.fromCodePoint('0x1F371').repeat(bentoCount)
     }
 
-    //1F371
-
     return (
         <article>
             <h3>{title}</h3>
