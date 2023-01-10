@@ -2,7 +2,14 @@
   "name": "react-hooks-component-props-mini-project",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.svg$": "jest-svg-transformer"
+    }
+  },
   "dependencies": {
+    "jest-svg-transformer": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1"
