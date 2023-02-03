@@ -45,7 +45,7 @@ Make an `About` component as a child of `App`. It should return:
     for the prop if no prop is passed in: "https://via.placeholder.com/215"
   - the image should also be accessible! Give it an `alt` attribute of "blog
     logo"
-  - a `<p>` element, with th text for the blog passed in as a prop called
+  - a `<p>` element, with the text for the blog passed in as a prop called
     `about`
 
 ### ArticleList
