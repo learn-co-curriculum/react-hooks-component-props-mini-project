@@ -19,8 +19,8 @@ We'll be creating a personal blog site, similar to
 ![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-component-props-mini-project/demo.png)
 
 There is some starter code available in `src/components/App.js`. There is also
-some data in `data/blog.js` that is being imported into `App` so you can pass
-it down to the components that need it.
+some data in `data/blog.js` that is being imported into `App` so you can pass it
+down to the components that need it.
 
 ## Deliverables
 
@@ -32,26 +32,29 @@ can determine how to pass data down as props.
 Make a `Header` component as a child of `App`. It should return:
 
 - a `<header>` element with the following elements inside:
-  - an `<h1>` with the _name_ of the blog, passed as a prop
+  - an `<h1>` with the name of the blog, passed as a prop called `name`
 
 ### About
 
 Make an `About` component as a child of `App`. It should return:
 
 - an `<aside>` element with the following elements inside:
-  - an `<img>` element, with the `src` set to an _image_ passed as a prop
+  - an `<img>` element, with the `src` set to an image passed as a prop called
+    `image`
   - the `<img>` element should use this placeholder image as a _default value_
     for the prop if no prop is passed in: "https://via.placeholder.com/215"
-  - the image should also be accessible! Give it an `alt` attribute of "blog logo"
-  - a `<p>` element, with the _about_ text for the blog passed in as a prop
+  - the image should also be accessible! Give it an `alt` attribute of "blog
+    logo"
+  - a `<p>` element, with th text for the blog passed in as a prop called
+    `about`
 
 ### ArticleList
 
 Make an `ArticleList` component as a child of `App`. It should return:
 
 - a `<main>` element with the following components inside:
-  - an array of `Article` components (one component for each _post_ passed down
-    as a prop to `ArticleList`)
+  - an array of `Article` components (one component for each post passed down as
+    a prop called `post` to `ArticleList`)
   - make sure to assign a unique `key` prop to each `Article`
 
 ### Article
@@ -59,15 +62,19 @@ Make an `ArticleList` component as a child of `App`. It should return:
 Make an `Article` component as a child of `ArticleList`. It should return:
 
 - an `<article>` element, with the following elements inside:
-  - an `<h3>` element displaying the _title_ of the article, passed as a prop
-  - a `<small>` element displaying the _date_ of the article, passed as a prop
-    - a _default value_ of "January 1, 1970" should be used if no date is passed as a prop
-  - a `<p>` element displaying the _preview_ of the article, passed as a prop
+  - an `<h3>` element displaying the title of the article, passed as a prop
+    called `title`
+  - a `<small>` element displaying the date of the article, passed as a prop
+    called `date`
+    - a _default value_ of "January 1, 1970" should be used if no date is passed
+      as a prop
+  - a `<p>` element displaying the preview of the article, passed as a prop
+    called `preview`
 
 ### Bonus Feature: 'Minutes to Read'
 
-You'll notice in the original [Overreacted](https://overreacted.io/) site, there's a
-'minutes to read' indicator next to each article.
+You'll notice in the original [Overreacted](https://overreacted.io/) site,
+there's a 'minutes to read' indicator next to each article.
 
 If the article takes less than 30 minutes to read:
 
