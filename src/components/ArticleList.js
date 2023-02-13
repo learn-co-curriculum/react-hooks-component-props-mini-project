@@ -4,7 +4,7 @@ import Article from "./Article";
 function ArticleList({ articles }) {
   return (
     <main>
-      {articles.map((item, index) => {
+      {articles?.map((item, index) => {
         return (
           <Article
             key={index}

@@ -1,7 +1,6 @@
 import React from "react";
 
 const Article = ({ title, date, preview }) => {
-  console.log("date here", date);
   return (
     <article>
       <h3>{title}</h3>
