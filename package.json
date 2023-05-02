@@ -4,12 +4,9 @@
   "private": true,
   "jest": {
     "transform": {
-      "^.+\\.js$": "babel-jest",
-      "^.+\\.svg$": "jest-svg-transformer"
-    }
+      "^.+\\.js$": "babel-jest"    }
   },
   "dependencies": {
-    "jest-svg-transformer": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^5.0.1"
