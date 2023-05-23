@@ -1,7 +1,7 @@
 import React from "react";
 
 function Header({name}){
-    console.log(name)
+    //console.log(name)
 
     return <h1>{name}</h1>
 }
