@@ -8,7 +8,8 @@ function About ({image = "https://via.placeholder.com/215", alt, about}){
 
     return(
         <aside>
-            <img src={image}/>
+            <img src={image} alt ={alt}/>
+            <p>{about}</p>
         </aside>
 
     );
