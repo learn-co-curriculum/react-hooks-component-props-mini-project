@@ -1,8 +1,8 @@
 import Article from "./Article"
 
-const ArticleList = ({ blogData }) => {
-  const blogDataPosts = blogData.posts
-  const articles = blogDataPosts.map(post => {
+const ArticleList = ({ posts }) => {
+
+  const articles = posts.map(post => {
     return <Article key={post.id} post={post}  />
 
   })

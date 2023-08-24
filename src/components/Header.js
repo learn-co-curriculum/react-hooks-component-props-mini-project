@@ -1,7 +1,8 @@
-const Header = ({blogData}) => {
-  
+const Header = ({name}) => {
+  console.log(name)
+
   return(
-    <h1>{blogData.name}</h1>
+    <h1>{name}</h1>
   );
 }
 
