@@ -1,11 +1,6 @@
 import React from "react";
 
 function About( {image = "https://via.placeholder.com/215", about} ) {
-
-    // ternary
-        // let hasImg = prop.image;
-        // {hasImg ? <img src={prop.image} alt="blog logo"></img> : <img src="https://via.placeholder.com/215" alt="blog logo"></img>}
-
     return(
         <aside>
             <img src={image} alt="blog logo"></img>
@@ -14,7 +9,17 @@ function About( {image = "https://via.placeholder.com/215", about} ) {
     )
 }
 
-/* pair lab 
+/* pair lab
+
+function About( prop ) {
+    let hasImg = prop.image;
+    return(
+        <aside>
+            {hasImg ? <img src={prop.image} alt="blog logo"></img> : <img src="https://via.placeholder.com/215" alt="blog logo"></img>}
+            <p>{about}</p>
+        </aside>
+    )
+}
 
 function About (){
     if (!blogData.image){blogData.image="https://via.placeholder.com/215"}

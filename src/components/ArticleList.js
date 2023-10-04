@@ -2,10 +2,7 @@ import React from "react";
 import Article from "./Article";
 
 function ArticleList( {posts} ) {
-
-    // console.log(posts)
-
-    const postItems = posts.map((post)=>{
+    const postItems = posts.map( (post) => {
         return (
             <Article 
             key ={post.id} 

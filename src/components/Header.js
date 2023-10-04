@@ -1,9 +1,6 @@
 import React from "react";
 
-function Header(prop) {
-    
-    // console.log(prop)
-
+function Header(prop) {  
     return(
         <header>
             <h1>{prop.name}</h1>
