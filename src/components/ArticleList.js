@@ -8,10 +8,11 @@ function ArticleList( {posts} ) {
     const postItems = posts.map((post)=>{
         return (
             <Article 
-            key={post.id} 
+            key ={post.id} 
             title={post.title} 
             date={post.date} 
             preview={post.preview}
+            minutes={post.minutes}
             />
         )
     })
