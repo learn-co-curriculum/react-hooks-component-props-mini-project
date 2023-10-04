@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Header name={blogData.name}/>
     
-      {/* <About about={blogData.image} /> */}
+      {/* <About about={blogData.image} />
       <About/>
     
-      <ArticleList/>
+      <ArticleList post={blogData.post}/> */}
 
     </div>
 
