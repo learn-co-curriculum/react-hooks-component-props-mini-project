@@ -1,31 +1,18 @@
-// import React from "react";
-// import Article from "./Article";
-// // import blogData from "../data/blog";
+import React from "react";
+import Article from "./Article";
 
-// function ArticleList(props) {
-//     // const least = blogData.posts.map(element => {
-//     //     return (<article key={element.id}> {element} </article>)
-//     // })
+function ArticleList( {posts} ) {
 
-//     // console.log(blogData.posts)
-//     return (
-//         <main>
-//             {
-//                 props.map((post) => {
-//                     return (
-//                     <article key={post.id}> 
-//                         <Article 
-//                         title = {post.title}
-//                         date = {post.date}
-//                         preview = {post.preview}
-//                         /> 
-//                     </article>
-//                     )
-//                 })
-//             }
-//             <p>awdlkawndlanwlfanw</p>            
-//         </main>
-//     )
-// }
+    const postItems = posts.map((post)=>{
+        return <Article key={post.id}/>
+    })
 
-// export default ArticleList;
+  return (
+    <main>
+        {/* array of Article components */}
+        {postItems}
+    </main>
+  )
+}
+
+export default ArticleList;

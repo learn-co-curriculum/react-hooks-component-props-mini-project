@@ -6,7 +6,6 @@ function About( {image = "https://via.placeholder.com/215", about} ) {
         // let hasImg = prop.image;
         // {hasImg ? <img src={prop.image} alt="blog logo"></img> : <img src="https://via.placeholder.com/215" alt="blog logo"></img>}
 
-
     return(
         <aside>
             <img src={image} alt="blog logo"></img>

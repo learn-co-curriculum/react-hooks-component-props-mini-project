@@ -13,7 +13,7 @@ function App() {
     
       <About image={blogData.image} about={blogData.about}/><About/>
     
-      {/* <ArticleList post={blogData.post}/> */}
+      <ArticleList posts={blogData.posts}/>
 
     </div>
 
