@@ -8,6 +8,7 @@ import Article from "./Article";
 
 console.log(blogData);
 
+
 function App() {
 
   const blogName = "My Awesome Blog";
@@ -32,13 +33,14 @@ function App() {
      
       <Header blogName= {blogName} />
       <About imageUrl={imageUrl} aboutText={aboutText} />
-      <Article />
       <ArticleList articles={articles} />
+      <Article />
       
       </div>
     
     
   );
+  
 }
 
 export default App;
