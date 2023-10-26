@@ -26,25 +26,15 @@ function App() {
     }
   ]
   
-  const Articles = [
-    {
-      title: 'First Article',
-      date: 'October 26, 2023',
-      preview: 'This is the preview of the first article.',
-    },
-    {
-      title: 'Second Article',
-      preview: 'This is the preview of the second article.',
-    }
-  ]
 
   return (
     <div className="App">
      
       <Header blogName= {blogName} />
       <About imageUrl={imageUrl} aboutText={aboutText} />
-      <ArticleList articles={articles} />
       <Article />
+      <ArticleList articles={articles} />
+      
       </div>
     
     
