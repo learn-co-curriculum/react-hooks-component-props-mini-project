@@ -8,10 +8,12 @@ function Article(props) {
   return (
     <div>
     <article>
+
       <h3>{title}</h3>
       <small>{formattedDate}</small>
       <img src={defaultImageUrl} alt="Article Image" />
       <p>{preview}</p>
+      
     </article>
     </div>
   );
