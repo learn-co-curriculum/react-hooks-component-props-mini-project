@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
      
-      <Header blogName= {blogName} />
+      <Header blogName={blogName} />
       <About imageUrl={imageUrl} aboutText={aboutText} />
       <ArticleList articles={articles} />
       <Article />
