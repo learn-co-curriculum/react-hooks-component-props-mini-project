@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-function About() {
+function About({ image = "https://via.placeholder.com/215", about }) {
+
     return (
-      <div>About</div>
+      <aside>
+        <img src={image} alt="blog logo"></img>
+        <p>{about}</p>
+      </aside>
     )
   }
   

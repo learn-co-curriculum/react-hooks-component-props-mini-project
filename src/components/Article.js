@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Article() {
+function Article({ key, title, date = "January 1, 1970", preview, minutes }) {
+
     return (
-      <div>Article</div>
+      <article key={key}>
+        <h3>{title}</h3>
+        <small>{date}</small>
+        <p>{preview}</p>
+      </article>
     )
   }
   
