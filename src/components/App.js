@@ -8,7 +8,7 @@ function App() {
   const {name} = blogData
   return (
     <div className="App">
-      <Header name />
+      <Header name={name} />
     </div>
   )
 }
