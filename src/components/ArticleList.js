@@ -10,7 +10,7 @@ function ArticleList({ posts }) {
           title={post.title}
           date={post.date}
           preview={post.preview}
-          minutesToRead={post.minutesToRead}
+          minutes={post.minutes}
           />
       ))}
     </main>

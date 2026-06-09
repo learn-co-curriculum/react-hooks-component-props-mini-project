@@ -1,20 +1,21 @@
 import React from "react";
 
-function getMinutesDisplay(minutesToRead) {
-  if (minutesToRead < 30) {
-    const cups = Math.ceil(minutesToRead / 5);
-    return "☕️".repeat(cups) + ` ${minutesToRead} min read`;
+function getMinutes(minutes) {
+  if (minutes < 30) {
+    const cups = Math.ceil(minutes / 5);
+    return "☕️".repeat(cups) + ` ${minutes} min read`;
   } else {
-    const boxes = Math.ceil(minutesToRead / 10);
-    return "🍱".repeat(boxes) + ` ${minutesToRead} min read`;
+    const boxes = Math.ceil(minutes / 10);
+    return "🍱".repeat(boxes) + ` ${minutes} min read`;
   }
 }
 
-function Article({ title, date = "January 1, 1970", preview, minutesToRead }) {
+function Article({ title, date = "January 1, 1970", preview, minutes }) {
   return (
     <article>
       <h3>{title}</h3>
       <small>{date}</small>
+      <small> — {getMinutes(minutes)}</small>
       <p>{preview}</p>
     </article>
   );
